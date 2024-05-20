@@ -6,18 +6,21 @@ import SudokuGrid from '../../components/sudokuGrid';
 import NumberPad from '../../components/numberPad';
 import { generateSudoku, SudokuGrid as SudokuGridType } from '../../components/sudokuGenerator';
 
-export default function SudokuGridScreen () {
-  
-  // Utilisation de useLocalSearchParams sans typage générique
-  const params = useLocalSearchParams();
+interface RouteParams {
+  [key: string]: string | string[]; // index signature to satisfy SearchParams constraint
+}
 
-  // Extraire la difficulté des paramètres
-  const difficulty = params.difficulty as string | undefined;
+export default function SudokuGridScreen () {
+
+  const params = useLocalSearchParams<RouteParams>();
+
+  // Extract difficulty and id, providing default values if undefined
+  const difficulty = (params.difficulty && typeof params.difficulty === 'string') ? params.difficulty : 'medium';
+  const id = (params.id && typeof params.id === 'string') ? params.id : 'default-id';
 
   const [puzzle, setPuzzle] = useState<SudokuGridType>([]);
 
   const [selectedCell, setSelectedCell] = useState<{ row: number; col: number } | null>(null);
-  const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
     const newPuzzle = generateSudoku(difficulty || 'medium');
@@ -44,6 +47,7 @@ export default function SudokuGridScreen () {
           <SudokuGrid
             puzzle={puzzle}
             onCellChange={handleCellChange}
+            id={id}
           />
         )}
       </View>

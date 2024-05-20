@@ -10,10 +10,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   gridContainer: {
     flex: 1,
     marginTop: '10%',
   },
+
   numberPadContainer: {
     flexDirection: 'row',
     justifyContent: 'center',

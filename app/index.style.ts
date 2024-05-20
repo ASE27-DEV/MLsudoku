@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
     },
   
     logo: {
-      width: width/1.2,
+      width: width,
       height: height/2,
       marginTop: '-1%',
     },
@@ -22,11 +22,17 @@ export const styles = StyleSheet.create({
     mylaButtonView : {
       zIndex: 2,
       backgroundColor: 'pink',
-      minWidth: '50%',
+      minWidth: width/2,
       minHeight: '10%',
       justifyContent: 'center',
       alignItems: 'center',
   
+    },
+
+    cadreMyla: {
+      position: 'absolute',
+      width: width/1.9,
+      height: height/7,
     },
   
     userSelectionButton : {
@@ -38,10 +44,17 @@ export const styles = StyleSheet.create({
     leoButtonView : {
       zIndex: 2,
       backgroundColor: 'blue',
-      minWidth: '50%',
+      minWidth: width/2,
       minHeight: '10%',
       justifyContent: 'center',
       alignItems: 'center',
+    },
+
+    cadreLeo: {
+      position: 'absolute',
+      width: width/1.7,
+      height: height/7.5,
+      top: -25,
     },
   
   });

@@ -5,7 +5,7 @@ export const width = Dimensions.get('screen').width
 export const height = Dimensions.get('screen').height
 
 export const styles = StyleSheet.create({
-    cell: {
+    cellMyla: {
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
@@ -13,6 +13,16 @@ export const styles = StyleSheet.create({
       borderColor: 'pink',
       backgroundColor: 'white',
     },
+
+    cellLeo: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderWidth: 3,
+      borderColor: 'blue',
+      backgroundColor: 'white',
+    },
+
     cellText: {
       fontSize: 40,
       textAlign: 'center',

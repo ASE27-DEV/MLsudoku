@@ -8,11 +8,15 @@ export default function Index() {
     return (
         <View style={styles.container}>
             <Image
-                source={require('../assets/images/logoProvisoire.png')}
+                source={require('../assets/images/logoFinal.png')}
                 style={styles.logo}
             />
             <TouchableOpacity>
                 <View style={styles.mylaButtonView}>
+                    <Image 
+                        source={require('../assets/images/cadreMyla.png')}
+                        style={styles.cadreMyla}
+                    />
                     <Text
                         style={styles.userSelectionButton}
                         onPress={() => {
@@ -28,6 +32,10 @@ export default function Index() {
             </TouchableOpacity>
             <TouchableOpacity>
                 <View style={styles.leoButtonView}>
+                    <Image 
+                        source={require('../assets/images/cadreLeo.png')}
+                        style={styles.cadreLeo}
+                    />
                         <Text
                             style={styles.userSelectionButton}
                             onPress={() => {

@@ -7,9 +7,10 @@ import { SudokuGrid as SudokuGridType } from '../sudokuGenerator'
 interface SudokuGridProps {
   puzzle: SudokuGridType;
   onCellChange: (row: number, col: number) => void;
+  id: string;
 }
 
-const SudokuGrid: React.FC<SudokuGridProps> = ({ puzzle, onCellChange }) => {
+const SudokuGrid: React.FC<SudokuGridProps> = ({ puzzle, onCellChange, id }) => {
   return (
     <View style={styles.grid}>
       {puzzle.map((row, rowIndex) => (
@@ -19,6 +20,7 @@ const SudokuGrid: React.FC<SudokuGridProps> = ({ puzzle, onCellChange }) => {
             key={cellIndex}
             value={cell}
             onPress={() => onCellChange(rowIndex, cellIndex)}
+            id={id}
           />
           ))}
         </View>
