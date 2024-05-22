@@ -109,7 +109,7 @@ export default function SudokuGridScreen() {
             style={styles.successImage}
           />
           <Text style={styles.successText}>
-            {id === '1' ? 'Bravo Myla, tu as réussi ;) ' : 'Bravo Leo, tu as réussi !'}
+            {id === '1' ? 'Bravo Myla, tu as réussi ;) ' : 'Bravo Leo, tu as réussi ;)'}
           </Text>
         </View>
       )}

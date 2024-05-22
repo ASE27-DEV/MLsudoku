@@ -28,11 +28,20 @@ const isValid = (grid: SudokuGrid, row: number, col: number, num: number): boole
   return true;
 };
 
+const shuffleArray = (array: number[]): number[] => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
 const fillGrid = (grid: SudokuGrid): boolean => {
   for (let row = 0; row < GRID_SIZE; row++) {
     for (let col = 0; col < GRID_SIZE; col++) {
       if (grid[row][col] === 0) {
-        for (let num = 1; num <= GRID_SIZE; num++) {
+        const nums = shuffleArray([...Array(GRID_SIZE)].map((_, i) => i + 1));
+        for (const num of nums) {
           if (isValid(grid, row, col, num)) {
             grid[row][col] = num;
             if (fillGrid(grid)) {
