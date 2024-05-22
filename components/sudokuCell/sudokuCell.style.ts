@@ -34,12 +34,20 @@ export const styles = StyleSheet.create({
     },
 
     validCell: {
-      borderWidth: 1,
+      position: 'relative',
+      zIndex: 5,
+      width: 40,
+      borderWidth: 3,
       borderColor: 'green',
+      borderRadius: 15,
     },
     invalidCell: {
-      borderWidth: 1,
+      position: 'relative',
+      zIndex: 5,
+      width: 40,
+      borderWidth: 3,
       borderColor: 'red',
+      borderRadius: 15,
     },
 
   });

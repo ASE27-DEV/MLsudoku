@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import { styles } from './sudokuCell.style';
 
 interface SudokuCellProps {
@@ -30,11 +30,13 @@ const SudokuCell: React.FC<SudokuCellProps> = ({ value, onPress, id, columnSquar
       style={[
         id === '1' ? styles.cellMyla : styles.cellLeo,
         columnSquare ? styles.highlightedColumn : null,
-        showValidation ? (isValid ? styles.validCell : styles.invalidCell) : null
+        
       ]} 
       onPress={onPress}
     >
-      <Text style={styles.cellText}>{value !== 0 ? value.toString() : ''}</Text>
+      <View style={showValidation ? (isValid ? styles.validCell : styles.invalidCell) : null}>
+        <Text style={styles.cellText}>{value !== 0 ? value.toString() : ''}</Text>
+      </View>
     </TouchableOpacity>
   );
 };
