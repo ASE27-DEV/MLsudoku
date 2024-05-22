@@ -12,6 +12,29 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     margin: 15,
+    borderWidth: 2,
+    borderRadius: 25,
+    borderColor: 'red',
+  },
+
+  easyBorder: {
+    borderColor: 'green',
+  },
+
+  mediumBorder: {
+    borderColor: 'yellow',
+  },
+
+  hardBorder: {
+    borderColor: 'orange',
+  },
+
+  expertBorder: {
+    borderColor: 'red',
+  },
+
+  defaultBorder: {
+    borderColor: 'grey',
   },
 
   image: {

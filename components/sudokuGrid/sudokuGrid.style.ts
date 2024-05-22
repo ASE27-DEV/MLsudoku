@@ -4,18 +4,36 @@ export const width = Dimensions.get('screen').width
 export const height = Dimensions.get('screen').height
 
 export const styles = StyleSheet.create({
-    grid: {
-      borderWidth: 0,
-      borderColor: 'pink',
+    gridMyla: {
+      borderWidth: 5,
+      borderColor: 'lightpink',
     },
+
+    gridLeo: {
+      borderWidth: 5,
+      borderColor: 'lightblue',
+    },
+
     row: {
-      width: width/1,
+      width: width/1.05,
       height: height/15,
       flexDirection: 'row',
     },
-    frame: {
-      borderWidth: 3,
-      borderColor: 'black',
+
+    rowsquareMyla: {
+      width: width / 1.05,
+      height: height / 15,
+      flexDirection: 'row',
+      borderBottomWidth: 5,
+      borderBottomColor: 'lightpink',
+    },
+
+    rowsquareLeo: {
+      width: width / 1.05,
+      height: height / 15,
+      flexDirection: 'row',
+      borderBottomWidth: 5,
+      borderBottomColor: 'lightblue',
     },
 
   });

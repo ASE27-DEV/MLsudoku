@@ -87,10 +87,11 @@ const removeNumbers = (grid: SudokuGrid, difficulty: string): SudokuGrid => {
   return grid;
 };
 
-const generateSudoku = (difficulty: string = 'easy'): SudokuGrid => {
-  const grid = generateEmptyGrid();
-  fillGrid(grid);
-  return removeNumbers(grid, difficulty);
+const generateSudokuWithSolution = (difficulty: string = 'easy'): { puzzle: SudokuGrid, solution: SudokuGrid } => {
+  const solution = generateEmptyGrid();
+  fillGrid(solution);
+  const puzzle = JSON.parse(JSON.stringify(solution));
+  return { puzzle: removeNumbers(puzzle, difficulty), solution };
 };
 
-export { generateSudoku, SudokuGrid };
+export { generateSudokuWithSolution, SudokuGrid };

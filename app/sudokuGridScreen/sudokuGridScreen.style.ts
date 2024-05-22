@@ -23,4 +23,29 @@ export const styles = StyleSheet.create({
     paddingVertical: 10,
   },
 
+  successMessageContainer: {
+    position: 'absolute',
+    top: '30%',
+    left: '10%',
+    right: '10%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#000',
+  },
+
+  successImage: {
+    width: 150,
+    height: 150,
+    marginBottom: 10,
+  },
+
+  successText: {
+    fontSize: 40,
+    textAlign: 'center',
+  },
+
 });

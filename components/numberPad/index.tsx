@@ -7,7 +7,7 @@ interface NumberPadProps {
 }
 
 const NumberPad: React.FC<NumberPadProps> = ({ onSelectNumber }) => {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
   return (
     <View style={styles.container}>

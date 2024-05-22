@@ -18,6 +18,15 @@ const imageSources: { [key: string]: any } = {
     default: require('../../assets/images/default.png') // Image fallback
 };
 
+// Mapping des couleurs de bordure en fonction de la difficulté
+const borderStyles: { [key: string]: any } = {
+    easy: styles.easyBorder,
+    medium: styles.mediumBorder,
+    hard: styles.hardBorder,
+    expert: styles.expertBorder,
+    default: styles.defaultBorder,
+  };
+
 const DifficultyButton: React.FC<DifficultyButtonProps> = ({ name, difficulty, id }) => (
     <TouchableOpacity
         onPress={() => {
@@ -27,7 +36,7 @@ const DifficultyButton: React.FC<DifficultyButtonProps> = ({ name, difficulty, i
             });
         }}
     >
-        <View style={styles.difficultySelectionView}>
+        <View style={[styles.difficultySelectionView, borderStyles[difficulty] || borderStyles.default]}>
             <Image source={imageSources[difficulty] || imageSources.default} style={styles.image} />
             <Text style={styles.difficultyTextButton}>{name}</Text>
         </View>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { styles } from './difficultySelectionScreen.style';
-import { View } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import DifficultyButton from '@/components/difficultyButtonSelection';
 
@@ -13,13 +13,23 @@ const difficulties = [
 
 export default function DifficultySelectionScreen() {
 
-    const params = useLocalSearchParams<{ id: string }>();
+    const params = useLocalSearchParams<{ id: string, playerName: string }>();
     const id = params.id!;
+    const playerName = params.playerName!;
 
     return (
         <View style={params.id === '1' ? styles.containerMyla : styles.containerLeo}>
             {params.id && (
                 <>
+                    <View style={styles.headerScreenContainer}>
+                        <Image 
+                            source={require('../../assets/images/Knuckles.png')}
+                            style={styles.imageDifficulty}
+                        />
+                        <Text style={styles.headerScreenText}>
+                            {playerName}, Choisis ta difficulté :
+                        </Text>
+                    </View>
                     {difficulties.map((item) => (
                         <DifficultyButton key={item.gameId} name={item.name} difficulty={item.difficulty} id={id}/>
                     ))}

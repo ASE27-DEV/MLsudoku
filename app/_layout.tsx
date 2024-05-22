@@ -42,7 +42,7 @@ export default function RootLayout() {
         <Stack.Screen 
           name="difficultySelectionScreen/[id]" 
           options={{ 
-            headerShown: true,
+            headerShown: false,
             headerTitle: `Choisi ta difficulté`,
             headerStyle: {
               backgroundColor: 'brown',              
