@@ -1,7 +1,8 @@
 import { Dimensions, StyleSheet } from 'react-native'
 
-export const width = Dimensions.get('screen').width
-export const height = Dimensions.get('screen').height
+const { width, height } = Dimensions.get('screen');
+
+const isTablet = width > 600;
 
 export const styles = StyleSheet.create({
 
@@ -31,18 +32,21 @@ export const styles = StyleSheet.create({
 
   headerScreenContainer: {
     width: width,
+    height: height/2.5,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: '20%',
   },
 
   imageDifficulty: {
-    width: width/3,
+    width: isTablet ? width/3 : width/2.7,
+    height: isTablet ? height/2.7 : height/3.7,
     marginBottom: '5%',
   },
 
   headerScreenText: {
     fontSize: 40,
+    textAlign: 'center',
   },
 
 });

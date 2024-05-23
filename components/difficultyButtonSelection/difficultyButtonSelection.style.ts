@@ -1,7 +1,8 @@
 import { Dimensions, StyleSheet } from 'react-native'
 
-export const width = Dimensions.get('screen').width
-export const height = Dimensions.get('screen').height
+const { width, height } = Dimensions.get('screen');
+
+const isTablet = width > 600;
 
 export const styles = StyleSheet.create({
 
@@ -12,7 +13,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     margin: 15,
-    borderWidth: 2,
+    borderWidth: isTablet ? 5 : 3,
     borderRadius: 25,
     borderColor: 'red',
   },

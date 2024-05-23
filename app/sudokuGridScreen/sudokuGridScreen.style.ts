@@ -7,8 +7,10 @@ export const styles = StyleSheet.create({
 
   container: {
     flex: 1,
+    width: width,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'white',
   },
 
   gridContainer: {
@@ -17,10 +19,12 @@ export const styles = StyleSheet.create({
   },
 
   numberPadContainer: {
+    maxWidth: width,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: 10,
+    paddingBottom: 50,
   },
 
   successMessageContainer: {

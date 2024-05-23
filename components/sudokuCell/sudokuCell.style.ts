@@ -1,8 +1,8 @@
 import { Dimensions, StyleSheet } from 'react-native'
 
+const { width, height } = Dimensions.get('screen');
 
-export const width = Dimensions.get('screen').width
-export const height = Dimensions.get('screen').height
+const isTablet = width > 600;
 
 export const styles = StyleSheet.create({
     cellMyla: {
@@ -29,14 +29,14 @@ export const styles = StyleSheet.create({
     },
 
     cellText: {
-      fontSize: 40,
+      fontSize: isTablet ? 50 : 40,
       textAlign: 'center',
     },
 
     validCell: {
       position: 'relative',
       zIndex: 5,
-      width: 40,
+      width: isTablet ? 60 : 40,
       borderWidth: 3,
       borderColor: 'green',
       borderRadius: 15,
@@ -44,8 +44,8 @@ export const styles = StyleSheet.create({
     invalidCell: {
       position: 'relative',
       zIndex: 5,
-      width: 40,
-      borderWidth: 3,
+      width: isTablet ? 60 : 40,
+      borderWidth: 3,    
       borderColor: 'red',
       borderRadius: 15,
     },
