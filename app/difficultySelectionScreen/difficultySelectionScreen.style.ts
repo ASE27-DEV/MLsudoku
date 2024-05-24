@@ -39,8 +39,8 @@ export const styles = StyleSheet.create({
   },
 
   imageDifficulty: {
-    width: isTablet ? width/3 : width/2.7,
-    height: isTablet ? height/2.7 : height/3.7,
+    width: isTablet ? 300 : width/2.7,
+    height: isTablet ? 450 : height/3.7,
     marginBottom: '5%',
   },
 

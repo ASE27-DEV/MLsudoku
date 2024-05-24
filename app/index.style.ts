@@ -15,25 +15,26 @@ export const styles = StyleSheet.create({
   },
 
   logo: {
-    width: isTablet ? width / 1.1 : width,
-    height: isTablet ? height / 1.5 : height / 2,
+    width: isTablet ? width : width,
+    height: isTablet ? height / 1.7 : height / 2,
     marginTop: '-1%',
   },
 
   mylaButtonView: {
     zIndex: 2,
     backgroundColor: 'pink',
-    minWidth: isTablet ? width / 2.5 : width / 2.1,
-    minHeight: isTablet ? '20%' : '10%',
+    minWidth: isTablet ? 320 : 200,
+    minHeight: isTablet ? 150 : 70,
     height: isTablet ? 150 : 70,
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: '3%',
   },
 
   cadreMyla: {
     position: 'absolute',
-    width: isTablet ? width / 1.7 : width / 1.5,
-    height: isTablet ? height / 5.5 : height / 6.8,
+    width: isTablet ? 450 : 250,
+    height: isTablet ? 200 : 120,
   },
 
   userSelectionButton: {
@@ -45,17 +46,17 @@ export const styles = StyleSheet.create({
   leoButtonView: {
     zIndex: 2,
     backgroundColor: 'blue',
-    minWidth: isTablet ? width / 2.5 : width / 2.1,
-    minHeight: isTablet ? '20%' : '10%',
-    height: isTablet ? 140 : 72,
+    minWidth: isTablet ? 320 : 200,
+    minHeight: isTablet ? 150 : 92,
+    height: isTablet ? 150 : 92,
     justifyContent: 'center',
     alignItems: 'center',
   },
 
   cadreLeo: {
     position: 'absolute',
-    width: isTablet ? width / 2.2 : width / 1.8,
-    height: isTablet ? height / 5.3 : height / 7,
-    top: isTablet ? -36 : -25,
+    width: isTablet ? 365 : 235,
+    height: isTablet ? 200 : 120,
+    top: isTablet ? -38 : -23,
   },
 });

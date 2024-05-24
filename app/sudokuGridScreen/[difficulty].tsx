@@ -96,7 +96,7 @@ export default function SudokuGridScreen() {
             id={id}
           />
         ) : (
-          <Text>Chargement...</Text>
+          <Text style={styles.loadingText}>Chargement...</Text>
         )}
       </View>
       <View style={styles.numberPadContainer}>

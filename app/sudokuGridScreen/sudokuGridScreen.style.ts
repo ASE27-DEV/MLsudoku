@@ -18,13 +18,17 @@ export const styles = StyleSheet.create({
     marginTop: '10%',
   },
 
+  loadingText: {
+    fontSize: 100,
+  },
+
   numberPadContainer: {
     maxWidth: width,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: 10,
-    paddingBottom: 50,
+    paddingBottom: 40,
   },
 
   successMessageContainer: {
