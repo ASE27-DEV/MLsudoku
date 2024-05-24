@@ -96,7 +96,10 @@ export default function SudokuGridScreen() {
             id={id}
           />
         ) : (
-          <Text style={styles.loadingText}>Chargement...</Text>
+          <Image 
+            source={require('../../assets/images/narutoKageBunshin.gif')}
+            style={styles.loadingImage}
+          />
         )}
       </View>
       <View style={styles.numberPadContainer}>

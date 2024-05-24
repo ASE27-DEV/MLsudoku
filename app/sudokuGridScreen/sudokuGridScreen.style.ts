@@ -18,8 +18,9 @@ export const styles = StyleSheet.create({
     marginTop: '10%',
   },
 
-  loadingText: {
-    fontSize: 100,
+  loadingImage: {
+    width: width,
+    height: height/1.7,
   },
 
   numberPadContainer: {
