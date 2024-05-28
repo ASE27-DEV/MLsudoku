@@ -14,7 +14,7 @@ interface SudokuGridProps {
 
 const SudokuGrid: React.FC<SudokuGridProps> = ({ puzzle, onCellChange, id, isValidGrid, isModifiedGrid }) => {
 
-  const gridStyle = id === '1' ? styles.gridMyla : styles.gridLeo;
+  const gridStyle = id  === '1' ? styles.gridMyla : styles.gridLeo;
   const rowSquareStyle = id === '1' ? styles.rowsquareMyla : styles.rowsquareLeo;
 
   return (

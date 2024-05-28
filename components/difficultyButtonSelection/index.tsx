@@ -7,6 +7,7 @@ interface DifficultyButtonProps {
     name: string;
     difficulty: string;
     id: string;
+    onPress: () => void;
 }
 
 // Mapping des chemins des images en fonction de la difficulté
@@ -27,14 +28,9 @@ const borderStyles: { [key: string]: any } = {
     default: styles.defaultBorder,
   };
 
-const DifficultyButton: React.FC<DifficultyButtonProps> = ({ name, difficulty, id }) => (
+const DifficultyButton: React.FC<DifficultyButtonProps> = ({ name, difficulty, onPress }) => (
     <TouchableOpacity
-        onPress={() => {
-            router.push({
-                pathname: `/sudokuGridScreen/[difficulty]`,
-                params: { difficulty: difficulty, id: id }
-            });
-        }}
+        onPress={onPress}
     >
         <View style={[styles.difficultySelectionView, borderStyles[difficulty] || borderStyles.default]}>
             <Image source={imageSources[difficulty] || imageSources.default} style={styles.image} />
