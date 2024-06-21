@@ -1,6 +1,6 @@
 Français :
 
-Bonjour tout le monde, mes enfants sont fans de sudoku en ce moment, j'étais lassé de toutes les pubs à chaque fois qu'ils jouaient et je cherchais un projet fun donc j'ai décidé de faire ma propre application sudoku pour eux. Je ne suis pas Designer du coup c'est assez basique parce qu'il n'y a aucune intention de release ou de commerce and c'est uniquement pour leur usage personnel donc n'hésitez pas si vous souhaitez vous l'approprier 🙂
+Bonjour tout le monde, mes enfants sont fans de sudoku en ce moment, j'étais lassé de toutes les pubs à chaque fois qu'ils jouaient et je cherchais un projet fun donc j'ai décidé de faire ma propre application sudoku pour eux. Je ne suis pas Designer du coup c'est assez basique parce qu'il n'y a aucune intention de release ou de commerce et c'est uniquement pour leur usage personnel donc n'hésitez pas si vous souhaitez vous l'approprier 🙂
 Il y aura bien sur des mises à jour dès qu'ils m'auront donné des idées d'amélioration 🙂 (par exemple un compteur de faute pour qu'ils ne puissent pas tricher XD).
 
 V1.0.1
