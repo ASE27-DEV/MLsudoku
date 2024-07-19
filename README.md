@@ -22,6 +22,6 @@ V1.0.1
 Actually all the basic features are here, however you can only save one part regardless of the profile, you can resume the saved part on the difficulty selection screen.
 
 You can build your own version if you use Expo account (even free account works) or you can just clik the following link and install it directly on your phone/tablet if they are in dev mode, you also need to allow "install unknow app" from chrome (or the navigator you use) : (only works on Android phone and not IOS )
-https://expo.dev/accounts/ase27/projects/MLsudoku/builds/06d605da-2ed9-4834-8f89-6ca040fa3fff
+https://expo.dev/accounts/ase27/projects/MLsudoku/builds/a4131dfd-743a-4a4e-99a5-54096d40de48
 
 Enjoy 🙂 
