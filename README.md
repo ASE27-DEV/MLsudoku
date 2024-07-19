@@ -8,7 +8,7 @@ Actuellement toutes les fonctions basiques sont là, néanmoins vous ne pouvez s
 
 Vous pouvez "build" votre propre version si vous utilisez un compte Expo (ça fonctionne même avec un compte gratuit) ou vous pouvez juste cliquer sur le lien suivant et l'installer directement sur votre téléphone/tablette s'il est en mode développeur, il faut aussi autoriser l'installation d'applications inconnue pour Chrome (ou le navigateur que vous utilisez) : (je précise que cela ne fonctionne qu'avec les téléphones Android et non IOS)
 
-https://expo.dev/accounts/ase27/projects/MLsudoku/builds/a4131dfd-743a-4a4e-99a5-54096d40de48
+https://expo.dev/accounts/ase27/projects/MLsudoku/builds/adee790c-898f-4bfa-8f2d-34e9a9df0fee
 
 Amusez-vous bien 🙂
 
@@ -22,6 +22,6 @@ V1.0.1
 Actually all the basic features are here, however you can only save one part regardless of the profile, you can resume the saved part on the difficulty selection screen.
 
 You can build your own version if you use Expo account (even free account works) or you can just clik the following link and install it directly on your phone/tablet if they are in dev mode, you also need to allow "install unknow app" from chrome (or the navigator you use) : (only works on Android phone and not IOS )
-https://expo.dev/accounts/ase27/projects/MLsudoku/builds/a4131dfd-743a-4a4e-99a5-54096d40de48
+https://expo.dev/accounts/ase27/projects/MLsudoku/builds/adee790c-898f-4bfa-8f2d-34e9a9df0fee
 
 Enjoy 🙂 
