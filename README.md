@@ -8,7 +8,7 @@ Actuellement toutes les fonctions basiques sont là, néanmoins vous ne pouvez s
 
 Vous pouvez "build" votre propre version si vous utilisez un compte Expo (ça fonctionne même avec un compte gratuit) ou vous pouvez juste cliquer sur le lien suivant et l'installer directement sur votre téléphone/tablette s'il est en mode développeur, il faut aussi autoriser l'installation d'applications inconnue pour Chrome (ou le navigateur que vous utilisez) : (je précise que cela ne fonctionne qu'avec les téléphones Android et non IOS)
 
-https://expo.dev/accounts/ase27/projects/MLsudoku/builds/06d605da-2ed9-4834-8f89-6ca040fa3fff
+https://expo.dev/accounts/ase27/projects/MLsudoku/builds/a4131dfd-743a-4a4e-99a5-54096d40de48
 
 Amusez-vous bien 🙂
 
